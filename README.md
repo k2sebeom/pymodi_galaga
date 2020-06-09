@@ -54,6 +54,7 @@ Connect all 5 modules like the following image.
 ## How to Play
 
 First, clone the repository to your local device.
+
     $ git clone https://github.com/k2sebeom/pymodi_galaga.git
 
 Then, you need to download two python libraries.
