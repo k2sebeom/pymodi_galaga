@@ -48,10 +48,12 @@ The controller of the game is a DIY MODI controller that consists of 5 MODI modu
 Connect all 5 modules to like the following image.
 
 <p align="center">
-    <img alt="MODI Controller Image" src="github" width=500 height=500> 
+    <img alt="MODI Controller Image" src="https://github.com/k2sebeom/pymodi_galaga/blob/master/src/controller.JPG" width=300 height=300> 
 </p>
 
+
 ## How to Play
+
 First, clone the repository to your local device.
     $ git clone https://github.com/k2sebeom/pymodi_galaga.git
 
