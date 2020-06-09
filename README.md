@@ -42,7 +42,7 @@ The controller of the game is a DIY MODI controller that consists of 5 MODI modu
     <li>Led module</li>
     <li>Gyro module</li>
     <li>Button module</li>
-<ul>
+</ul>
 
 
 Connect all 5 modules to like the following image.
