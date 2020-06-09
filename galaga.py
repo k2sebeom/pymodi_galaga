@@ -3,9 +3,12 @@ from threading import Timer
 import pygame
 from random import randint
 import time
+import os
 
 global gamepad, clock, cool_time, jet, background, enemies, bullets, targets
-global score
+global score, here
+
+here = os.path.dirname(__file__)
 
 WIDTH, HEIGHT = 512, 700
 SPEED, ENEMY_SPEED, BULLET_SPEED = 4, 2, 10
@@ -56,7 +59,7 @@ def check_enemy_death(b_x, b_y):
 
 def check_death(p_x, p_y):
     for _, x, y in targets:
-        if x + 40 >= p_x >= x - 40 and y + 10 >= p_y:
+        if x + 30 >= p_x >= x - 30 and y + 10 >= p_y:
             return True
     return False
 
@@ -111,7 +114,7 @@ def run_game(bundle):
     spawn_enemy()
     led.set_green()
     score = 0
-    font = pygame.font.Font('src/8bit.ttf', 24)
+    font = pygame.font.Font(os.path.join(here, 'src/8bit.ttf'), 24)
     while not crashed:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -144,7 +147,7 @@ def run_game(bundle):
         clock.tick(60)
 
     time.sleep(2)
-    over_back = pygame.image.load('./img/over.png')
+    over_back = pygame.image.load(os.path.join(here, 'img/over.png'))
     gamepad.blit(over_back, (0, 0))
     gamepad.blit(font.render(str(score), False,
                              (0, 0, 0)), (WIDTH // 2 - 10, HEIGHT // 2 + 20))
@@ -169,13 +172,13 @@ def init_game():
     pygame.init()
     gamepad = pygame.display.set_mode((WIDTH, HEIGHT))
     pygame.display.set_caption("PyMODI rox")
-    jet = pygame.image.load('./img/jet.png')
+    jet = pygame.image.load(os.path.join(here, 'img/jet.png'))
     enemies, targets, bullets = [], [], []
-    enemies.append(pygame.image.load('./img/enemy1.png'))
-    enemies.append(pygame.image.load('./img/enemy2.png'))
-    background = pygame.image.load('./img/background.png')
+    enemies.append(pygame.image.load(os.path.join(here, 'img/enemy1.png')))
+    enemies.append(pygame.image.load(os.path.join(here, 'img/enemy2.png')))
+    background = pygame.image.load(os.path.join(here, 'img/background.png'))
     clock = pygame.time.Clock()
-    start_back = pygame.image.load('./img/start.png')
+    start_back = pygame.image.load(os.path.join(here, './img/start.png'))
     gamepad.blit(start_back, (0, 0))
     pygame.display.update()
     run_game(bundle)
