@@ -1,7 +1,8 @@
 # Galaga with PyMODI
 
-<div align="center">
-    <img src="github.com/k2sebeom/pymodi_galaga/src/start_screen.JPG">
-    <img src="github.com/k2sebeom/pymodi_galaga/src/game_screen.JPG">
-    <img src="github.com/k2sebeom/pymodi_galaga/src/end_screen.JPG">
-</div>
+<p align="center">
+    <img src="https://github.com/k2sebeom/pymodi_galaga/blob/master/src/start_screen.JPG" width=200 height=300> 
+    <img src="https://github.com/k2sebeom/pymodi_galaga/blob/master/src/game_screen.JPG" width=200 height=300> 
+    <img src="https://github.com/k2sebeom/pymodi_galaga/blob/master/src/end_screen.JPG" width=200 height=300> 
+</p>
+
