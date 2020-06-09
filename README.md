@@ -6,7 +6,9 @@
     <img src="https://github.com/k2sebeom/pymodi_galaga/blob/master/src/end_screen.JPG" width=200 height=300> 
 </p>
 
-Press button to jump into the world of pymodi - Galaga!!
+<p align="center">
+    Press button to jump into the world of PyMODI-Galaga!!
+<p>
 
 --------
 
@@ -62,7 +64,7 @@ Then, you need to download two python libraries.
     $ pip install pymodi
     $ pip install pygame
  
-Once you have all the files, prepare your MODI controller, prepared as explained above. Connect the controller to your device, and start the game!
+Once you have all the files, prepare your MODI controller prepared as explained above. Connect the controller to your device, and start the game!
 
     $ python galaga.py
     
