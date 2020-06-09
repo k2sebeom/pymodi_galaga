@@ -1,3 +1,7 @@
-# pymodi_galaga
+# Galaga with PyMODI
 
-Play Galaga created with pymodi library!!
+<div align="center">
+    <img src="github.com/k2sebeom/pymodi_galaga/src/start_screen.JPG">
+    <img src="github.com/k2sebeom/pymodi_galaga/src/game_screen.JPG">
+    <img src="github.com/k2sebeom/pymodi_galaga/src/end_screen.JPG">
+</div>
